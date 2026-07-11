@@ -1,0 +1,20 @@
+{
+  "name": "database-migration-automator",
+  "version": "1.0.0",
+  "description": "Versioned MySQL database migrations with CLI and REST status API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "migrate:up": "node src/cli.js up",
+    "migrate:down": "node src/cli.js down",
+    "migrate:status": "node src/cli.js status"
+  },
+  "author": "Backend Developer Intern (CITS3714)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  }
+}
