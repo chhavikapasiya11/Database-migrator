@@ -92,10 +92,6 @@ database-migration-automator/
 4. After success, the version is inserted into `schema_migrations`.
 5. On failure, the transaction is rolled back and the migration remains pending.
 
-## How to explain it in an interview
-
-> “I built a MySQL migration automator for a MERN backend. Developers write numbered SQL files for each schema change. The tool applies only pending changes, stores their versions in a migration-history table, and supports rolling back the last change. Transactions prevent partial database updates if an error occurs.”
-
 ## Adding a new migration
 
 Create a matching pair of files, using the next number:
